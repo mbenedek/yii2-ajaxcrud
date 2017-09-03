@@ -9,7 +9,6 @@ Desktop.ini
 $RECYCLE.BIN/
 
 nbproject
-.idea
 vendor
 composer.phar
 composer.lock
@@ -22,3 +21,4 @@ composer.lock
 
 # Windows shortcuts
 *.lnk
+/.idea
