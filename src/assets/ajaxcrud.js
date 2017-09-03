@@ -1,5 +1,5 @@
 /*!
- * Ajax Crud 
+ * Ajax Crud
  * =================================
  * Use for johnitvn/yii2-ajaxcrud extension
  * @author John Martin john.itvn@gmail.com
@@ -30,13 +30,13 @@ $(document).ready(function () {
 
         // Collect all selected ID's
         var selectedIds = [];
-        
+
         // See if we have a selector set
         var selection = 'selection';
         if ($(this).data("selector") != null) {
         	selection = $(this).data("selector");
         }
-        
+
         $('input:checkbox[name="' + selection + '[]"]').each(function () {
             if (this.checked)
                 selectedIds.push($(this).val());
@@ -47,7 +47,7 @@ $(document).ready(function () {
             modal.show();
             modal.setTitle('No selection');
             modal.setContent('You must select item(s) to use this action');
-            modal.addFooterButton("Close", 'btn btn-default', function (button, event) {
+            modal.addFooterButton('Close', 'button', 'btn btn-default', function (button, event) {
                 this.hide();
             });
         } else {
