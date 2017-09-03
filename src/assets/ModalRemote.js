@@ -312,7 +312,7 @@ function ModalRemote(modalId) {
 	            'btn btn-primary',
 	            function (e) {
 	                var data;
-	
+
 	                // Test if browser supports FormData which handles uploads
 	                if (window.FormData) {
 	                    data = new FormData($('#ModalRemoteConfirmForm')[0]);
@@ -325,7 +325,7 @@ function ModalRemote(modalId) {
 	                        data.pks = selectedIds;
 	                    data = data.serializeArray();
 	                }
-	
+
 	                instance.doRemote(
 	                    dataUrl,
 	                    dataRequestMethod,
@@ -344,6 +344,31 @@ function ModalRemote(modalId) {
             }
         );
 
+    }
+
+    /**
+     * Show the dialog no selection
+     * @param {string} title The title of modal
+     * @param {string} message The message for ask user
+     * @param {string} okLabel The label of ok button
+     */
+    this.noSelectionModal = function (title, message, okLabel) {
+        this.show();
+
+        if (title !== undefined) {
+            this.setTitle(title);
+        }
+        // Add form for user input if required
+        this.setContent(message);
+
+        this.addFooterButton(
+            okLabel === undefined ? this.defaults.cancelLabel : okLabel,
+            'button',
+            'btn btn-default btn-flat pull-left',
+            function (e) {
+                this.hide();
+            }
+        );
     }
 
     /**
@@ -379,7 +404,7 @@ function ModalRemote(modalId) {
                 $(elm).hasAttr('href') ? $(elm).attr('href') : $(elm).attr('data-url'),
                 $(elm).hasAttr('data-request-method') ? $(elm).attr('data-request-method') : 'GET',
                 bulkData
-            )
+            );
         } else {
             this.doRemote(
                 $(elm).hasAttr('href') ? $(elm).attr('href') : $(elm).attr('data-url'),
