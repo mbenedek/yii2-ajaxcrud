@@ -1,8 +1,9 @@
 /*!
  * Modal Remote
  * =================================
- * Use for johnitvn/yii2-ajaxcrud extension
+ * Use for indeveler/yii2-ajaxcrud extension
  * @author John Martin john.itvn@gmail.com
+ * @author Yegor Popov indeveler@gmail.com
  */
 (function ($) {
     $.fn.hasAttr = function (name) {

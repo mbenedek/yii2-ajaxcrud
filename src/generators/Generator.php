@@ -1,5 +1,5 @@
 <?php
-namespace johnitvn\ajaxcrud\generators;
+namespace indeveler\ajaxcrud\generators;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -20,6 +20,7 @@ use yii\web\Controller;
  * @property string $viewPath The controller view path. This property is read-only.
  *
  * @author John Martin <john.itvn@gmail.com>
+ * @author Yegor Popov <indeveler@gmail.com>
  * @since 1.0
  */
 class Generator extends \yii\gii\Generator
@@ -127,7 +128,7 @@ class Generator extends \yii\gii\Generator
      */
     public function validateModelClass()
     {
-        /* @var $class ActiveRecord */     
+        /* @var $class ActiveRecord */
         $class = $this->modelClass;
         $pk = $class::primaryKey();
         if (empty($pk)) {

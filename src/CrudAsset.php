@@ -1,11 +1,12 @@
-<?php 
+<?php
 
-namespace johnitvn\ajaxcrud;
+namespace indeveler\ajaxcrud;
 
 use yii\web\AssetBundle;
 
 /**
  * @author John Martin <john.itvn@gmail.com>
+ * @author Yegor Popov <indeveler@gmail.com>
  * @since 1.0
  */
 class CrudAsset extends AssetBundle
@@ -26,7 +27,7 @@ class CrudAsset extends AssetBundle
         'yii\bootstrap\BootstrapPluginAsset',
         'kartik\grid\GridViewAsset',
     ];
-    
+
    public function init() {
        // In dev mode use non-minified javascripts
        $this->js = YII_DEBUG ? [
