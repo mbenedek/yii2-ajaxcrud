@@ -6,6 +6,11 @@
     "license": "Apache-2.0",
     "authors": [
         {
+            "name": "Mario Benedek",
+            "email": "mariobenedek@gmail.com",
+            "homepage": "https://github.com/mbenedek?tab=repositories"
+        },
+        {
             "name": "John Martin",
             "email": "john.itvn@gmail.com",
             "homepage": "https://github.com/johnitvn?tab=repositories"
@@ -14,11 +19,6 @@
             "name": "Yegor Popov",
             "email": "indeveler@gmail.com",
             "homepage": "https://github.com/indeveler"
-        },
-        {
-            "name": "Mario Benedek",
-            "email": "mariobenedek@gmail.com",
-            "homepage": "https://github.com/mbenedek?tab=repositories"
         }
     ],
     "support": {

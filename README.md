@@ -18,13 +18,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist indeveler/yii2-ajaxcrud "*"
+php composer.phar require --prefer-dist mbenedek/yii2-ajaxcrud "*"
 ```
 
 or add
 
 ```
-"indeveler/yii2-ajaxcrud": "*"
+"mbenedek/yii2-ajaxcrud": "*"
 ```
 
 to the require section of your `composer.json` file.
